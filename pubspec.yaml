@@ -1,0 +1,48 @@
+name: smart_skills
+description: "نظام إدارة معهد سمارت سكلز للتدريب والتأهيل"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # قاعدة البيانات المحلية
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # الطباعة وملفات PDF
+  pdf: ^3.10.7
+  printing: ^5.11.1
+
+  # استيراد/تصدير Excel واختيار الملفات
+  excel: ^4.0.2
+  file_picker: ^6.1.1
+
+  # النسخ الاحتياطي والمشاركة
+  path_provider: ^2.1.1
+  share_plus: ^7.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/Cairo-Regular.ttf
+    - assets/fonts/Cairo-Bold.ttf
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
